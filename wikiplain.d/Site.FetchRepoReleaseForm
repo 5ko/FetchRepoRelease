@@ -1,0 +1,6 @@
+>>frame<<
+'''FetchRepoRelease''': Notify about new GitHub releases when editing PmWiki Cookbook pages
+>><<
+[[#form]]
+(:input hidden xAction edit:)
+[[#formend]]
