@@ -57,7 +57,7 @@ function FetchRepoRelease($pagename, $page, $new) {
     if($tag <= $ver) break;
     $msg .= "<mark>* <b>$tag</b>: $notes</mark><br/>\n";
   }
-  if($msg) {
+  if($msg || @$_REQUEST['refreshrepo']) {
     $MessagesFmt[] = "<p><mark>$cached github.com/$repo</mark><br/>\n$msg</p>";
   }
 }
